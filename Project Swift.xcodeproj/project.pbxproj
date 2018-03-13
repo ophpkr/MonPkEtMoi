@@ -15,6 +15,7 @@
 		2F5E446F203B06EE00B2CC91 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 2F5E446D203B06EE00B2CC91 /* LaunchScreen.storyboard */; };
 		2F5E447A203B06EE00B2CC91 /* Project_SwiftTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2F5E4479203B06EE00B2CC91 /* Project_SwiftTests.swift */; };
 		2F5E4485203B06EE00B2CC91 /* Project_SwiftUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2F5E4484203B06EE00B2CC91 /* Project_SwiftUITests.swift */; };
+		C0E0072A20581DD600EE624E /* InscriptionController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C0E0072920581DD600EE624E /* InscriptionController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -49,6 +50,7 @@
 		2F5E4480203B06EE00B2CC91 /* Project SwiftUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Project SwiftUITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		2F5E4484203B06EE00B2CC91 /* Project_SwiftUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Project_SwiftUITests.swift; sourceTree = "<group>"; };
 		2F5E4486203B06EE00B2CC91 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		C0E0072920581DD600EE624E /* InscriptionController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = InscriptionController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -99,6 +101,7 @@
 		2F5E4460203B06ED00B2CC91 /* Project Swift */ = {
 			isa = PBXGroup;
 			children = (
+				C0E0072820581D9A00EE624E /* Controller */,
 				C0CC3C5B203C2BD3006B2BC2 /* Model */,
 				2F5E4461203B06ED00B2CC91 /* AppDelegate.swift */,
 				2F5E4463203B06ED00B2CC91 /* ViewController.swift */,
@@ -150,6 +153,14 @@
 			children = (
 			);
 			name = ModelTraitement;
+			sourceTree = "<group>";
+		};
+		C0E0072820581D9A00EE624E /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				C0E0072920581DD600EE624E /* InscriptionController.swift */,
+			);
+			name = Controller;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -287,6 +298,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				C0E0072A20581DD600EE624E /* InscriptionController.swift in Sources */,
 				2F5E4464203B06ED00B2CC91 /* ViewController.swift in Sources */,
 				2F5E446A203B06EE00B2CC91 /* Project_Swift.xcdatamodeld in Sources */,
 				2F5E4462203B06ED00B2CC91 /* AppDelegate.swift in Sources */,
