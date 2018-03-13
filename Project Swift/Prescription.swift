@@ -24,7 +24,6 @@ class Prescription{
     var duree : Int
     var listeHeurePrise : [HeurePrise]
     var dateDebut : Date
-    var 
     
     
     
