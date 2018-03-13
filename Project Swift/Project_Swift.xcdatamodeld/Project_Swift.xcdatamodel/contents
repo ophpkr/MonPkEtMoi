@@ -12,7 +12,7 @@
         <attribute name="nomEtat" optional="YES" attributeType="String" syncable="YES"/>
         <relationship name="estConcernePar" optional="YES" toMany="YES" deletionRule="Nullify" destinationEntity="Signalement" inverseName="concerneEtat" inverseEntity="Signalement" syncable="YES"/>
     </entity>
-    <entity name="Medicament" representedClassName="Medicament" syncable="YES" codeGenerationType="class">
+    <entity name="Medicament" representedClassName="Medicament" syncable="YES">
         <attribute name="doseMedicament" optional="YES" attributeType="Integer 16" defaultValueString="0" usesScalarValueType="YES" syncable="YES"/>
         <attribute name="nomMedicament" optional="YES" attributeType="String" syncable="YES"/>
         <attribute name="presentationMedicament" optional="YES" attributeType="String" syncable="YES"/>
@@ -91,7 +91,7 @@
     <elements>
         <element name="EtablissementLieu" positionX="-1181" positionY="-90" width="128" height="133"/>
         <element name="Etat" positionX="-252" positionY="-7" width="128" height="73"/>
-        <element name="Medicament" positionX="-1325" positionY="54" width="128" height="103"/>
+        <element name="Medicament" positionX="-1325" positionY="54" width="128" height="105"/>
         <element name="Patient" positionX="-513" positionY="-171" width="128" height="28"/>
         <element name="Personne" positionX="-830" positionY="-270" width="128" height="118"/>
         <element name="Prescription" positionX="-776" positionY="90" width="128" height="103"/>
