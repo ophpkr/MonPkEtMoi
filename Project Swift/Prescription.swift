@@ -19,7 +19,7 @@ import Foundation
  **quantité** : Int
  **description** : String
  */
-class Prescription{
+class Prescription {
     var medicament : Medicament
     var duree : Int
     var listeHeurePrise : [HeurePrise]
