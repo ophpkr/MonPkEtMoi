@@ -1,13 +1,12 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<model type="com.apple.IDECoreDataModeler.DataModel" documentVersion="1.0" lastSavedToolsVersion="13772" systemVersion="17D47" minimumToolsVersion="Automatic" sourceLanguage="Swift" userDefinedModelVersionIdentifier="">
+<model type="com.apple.IDECoreDataModeler.DataModel" documentVersion="1.0" lastSavedToolsVersion="13772" systemVersion="17D102" minimumToolsVersion="Automatic" sourceLanguage="Swift" userDefinedModelVersionIdentifier="">
     <entity name="EtablissementLieu" representedClassName="EtablissementLieu" syncable="YES" codeGenerationType="class">
         <attribute name="adrCPPro" optional="YES" attributeType="String" syncable="YES"/>
         <attribute name="adrPaysPro" optional="YES" attributeType="String" syncable="YES"/>
         <attribute name="adrRuePro" optional="YES" attributeType="String" syncable="YES"/>
         <attribute name="adrVillePro" optional="YES" attributeType="String" syncable="YES"/>
         <attribute name="nomEtablissement" optional="YES" attributeType="String" syncable="YES"/>
-        <relationship name="estHabite" optional="YES" toMany="YES" deletionRule="Nullify" destinationEntity="Professionnel" inverseName="reside" inverseEntity="Professionnel" syncable="YES"/>
-        <relationship name="faireObjetRdv" optional="YES" toMany="YES" deletionRule="Nullify" destinationEntity="RendezVous" inverseName="aLieu" inverseEntity="RendezVous" syncable="YES"/>
+        <relationship name="lieuDeTravail" optional="YES" toMany="YES" deletionRule="Nullify" destinationEntity="Professionnel" inverseName="travailleA" inverseEntity="Professionnel" syncable="YES"/>
     </entity>
     <entity name="Etat" representedClassName="Etat" syncable="YES" codeGenerationType="class">
         <attribute name="idEtat" optional="YES" attributeType="UUID" usesScalarValueType="NO" syncable="YES"/>
@@ -30,13 +29,14 @@
         <attribute name="tempsPreparationPatient" optional="YES" attributeType="Date" usesScalarValueType="NO" syncable="YES"/>
         <relationship name="assisterA" optional="YES" toMany="YES" deletionRule="Nullify" destinationEntity="RendezVous" inverseName="etreAssistePar" inverseEntity="RendezVous" syncable="YES"/>
         <relationship name="faireSignalement" optional="YES" toMany="YES" deletionRule="Nullify" destinationEntity="Signalement" inverseName="estFaitParPatient" inverseEntity="Signalement" syncable="YES"/>
-        <relationship name="seDonnerActivite" optional="YES" toMany="YES" deletionRule="Nullify" destinationEntity="PrescriptionActivite" inverseName="estDonneeParPatient" inverseEntity="PrescriptionActivite" syncable="YES"/>
+        <relationship name="seDonnerActivite" optional="YES" toMany="YES" deletionRule="Nullify" destinationEntity="PrescriptionActivite" syncable="YES"/>
     </entity>
     <entity name="Personne" representedClassName="Personne" isAbstract="YES" syncable="YES" codeGenerationType="class">
         <attribute name="mailPersonne" optional="YES" attributeType="String" syncable="YES"/>
         <attribute name="nomPersonne" optional="YES" attributeType="String" syncable="YES"/>
         <attribute name="numTelPersonne" optional="YES" attributeType="String" syncable="YES"/>
         <attribute name="prenomPersonne" optional="YES" attributeType="String" syncable="YES"/>
+        <relationship name="estPrescripteurActivite" optional="YES" toMany="YES" deletionRule="Nullify" destinationEntity="PrescriptionActivite" inverseName="estPrescritPar" inverseEntity="PrescriptionActivite" syncable="YES"/>
     </entity>
     <entity name="Prescription" representedClassName="Prescription" isAbstract="YES" syncable="YES" codeGenerationType="class">
         <attribute name="dateDebutPresc" optional="YES" attributeType="Date" usesScalarValueType="NO" syncable="YES"/>
@@ -48,22 +48,20 @@
         <attribute name="nomExercice" optional="YES" attributeType="String" syncable="YES"/>
         <relationship name="avoirRealisationTheorique" optional="YES" toMany="YES" deletionRule="Nullify" destinationEntity="RealisationTheorique" inverseName="prescriptActivite" inverseEntity="RealisationTheorique" syncable="YES"/>
         <relationship name="avoirType" optional="YES" maxCount="1" deletionRule="Nullify" destinationEntity="TypeActivite" inverseName="estType" inverseEntity="TypeActivite" syncable="YES"/>
-        <relationship name="estDonneeParPatient" optional="YES" maxCount="1" deletionRule="Nullify" destinationEntity="Patient" inverseName="seDonnerActivite" inverseEntity="Patient" syncable="YES"/>
-        <relationship name="estDonneeParPro" optional="YES" maxCount="1" deletionRule="Nullify" destinationEntity="Professionnel" inverseName="prescripteurActivite" inverseEntity="Professionnel" syncable="YES"/>
+        <relationship name="estPrescritPar" optional="YES" maxCount="1" deletionRule="Nullify" destinationEntity="Personne" inverseName="estPrescripteurActivite" inverseEntity="Personne" syncable="YES"/>
     </entity>
     <entity name="PrescriptionMedicale" representedClassName="PrescriptionMedicale" parentEntity="Prescription" syncable="YES" codeGenerationType="class">
         <attribute name="idPrescriptionMed" optional="YES" attributeType="UUID" usesScalarValueType="NO" syncable="YES"/>
         <relationship name="avoirRealisationTheorique" optional="YES" toMany="YES" deletionRule="Nullify" destinationEntity="RealisationTheorique" inverseName="prescriptMedicale" inverseEntity="RealisationTheorique" syncable="YES"/>
         <relationship name="concerne" optional="YES" toMany="YES" deletionRule="Nullify" destinationEntity="Medicament" inverseName="estPrescrit" inverseEntity="Medicament" syncable="YES"/>
-        <relationship name="estPrescritPar" optional="YES" maxCount="1" deletionRule="Nullify" destinationEntity="Professionnel" inverseName="prescripteurMedoc" inverseEntity="Professionnel" syncable="YES"/>
+        <relationship name="estPrescritPar" optional="YES" maxCount="1" deletionRule="Nullify" destinationEntity="Professionnel" syncable="YES"/>
     </entity>
     <entity name="Professionnel" representedClassName="Professionnel" parentEntity="Personne" syncable="YES" codeGenerationType="class">
         <attribute name="idProfesionnel" optional="YES" attributeType="UUID" usesScalarValueType="NO" syncable="YES"/>
         <relationship name="donneRdv" optional="YES" toMany="YES" deletionRule="Nullify" destinationEntity="RendezVous" inverseName="estDonnePar" inverseEntity="RendezVous" syncable="YES"/>
         <relationship name="estSpecialiseEn" optional="YES" maxCount="1" deletionRule="Nullify" destinationEntity="Specialite" inverseName="estPratiqueePar" inverseEntity="Specialite" syncable="YES"/>
-        <relationship name="prescripteurActivite" optional="YES" toMany="YES" deletionRule="Nullify" destinationEntity="PrescriptionActivite" inverseName="estDonneeParPro" inverseEntity="PrescriptionActivite" syncable="YES"/>
-        <relationship name="prescripteurMedoc" optional="YES" toMany="YES" deletionRule="Nullify" destinationEntity="PrescriptionMedicale" inverseName="estPrescritPar" inverseEntity="PrescriptionMedicale" syncable="YES"/>
-        <relationship name="reside" optional="YES" maxCount="1" deletionRule="Nullify" destinationEntity="EtablissementLieu" inverseName="estHabite" inverseEntity="EtablissementLieu" syncable="YES"/>
+        <relationship name="prescripteurMedoc" optional="YES" toMany="YES" deletionRule="Nullify" destinationEntity="PrescriptionMedicale" syncable="YES"/>
+        <relationship name="travailleA" optional="YES" maxCount="1" deletionRule="Nullify" destinationEntity="EtablissementLieu" inverseName="lieuDeTravail" inverseEntity="EtablissementLieu" syncable="YES"/>
     </entity>
     <entity name="RealisationReelle" representedClassName="RealisationReelle" syncable="YES" codeGenerationType="class">
         <attribute name="dateReelle" optional="YES" attributeType="Date" usesScalarValueType="NO" syncable="YES"/>
@@ -84,7 +82,6 @@
         <attribute name="estAlle" optional="YES" attributeType="Boolean" usesScalarValueType="YES" syncable="YES"/>
         <attribute name="estRdvNeurologue" optional="YES" attributeType="Boolean" usesScalarValueType="YES" syncable="YES"/>
         <attribute name="idRdv" optional="YES" attributeType="UUID" usesScalarValueType="NO" syncable="YES"/>
-        <relationship name="aLieu" optional="YES" maxCount="1" deletionRule="Nullify" destinationEntity="EtablissementLieu" inverseName="faireObjetRdv" inverseEntity="EtablissementLieu" syncable="YES"/>
         <relationship name="estDonnePar" optional="YES" maxCount="1" deletionRule="Nullify" destinationEntity="Professionnel" inverseName="donneRdv" inverseEntity="Professionnel" syncable="YES"/>
         <relationship name="etreAssistePar" optional="YES" maxCount="1" deletionRule="Nullify" destinationEntity="Patient" inverseName="assisterA" inverseEntity="Patient" syncable="YES"/>
     </entity>
@@ -107,20 +104,20 @@
         <relationship name="estType" optional="YES" toMany="YES" deletionRule="Nullify" destinationEntity="PrescriptionActivite" inverseName="avoirType" inverseEntity="PrescriptionActivite" syncable="YES"/>
     </entity>
     <elements>
-        <element name="EtablissementLieu" positionX="-1100" positionY="-193" width="128" height="148"/>
-        <element name="Etat" positionX="-479" positionY="72" width="128" height="88"/>
-        <element name="Medicament" positionX="-1253" positionY="207" width="128" height="118"/>
-        <element name="Patient" positionX="-623" positionY="-99" width="128" height="178"/>
-        <element name="Personne" positionX="-875" positionY="-189" width="128" height="103"/>
-        <element name="Prescription" positionX="-821" positionY="72" width="128" height="88"/>
-        <element name="PrescriptionActivite" positionX="-731" positionY="185" width="128" height="133"/>
-        <element name="PrescriptionMedicale" positionX="-1035" positionY="207" width="128" height="103"/>
-        <element name="Professionnel" positionX="-1080" positionY="9" width="117" height="118"/>
-        <element name="RealisationReelle" positionX="-756" positionY="324" width="128" height="103"/>
-        <element name="RealisationTheorique" positionX="-1017" positionY="333" width="128" height="133"/>
-        <element name="RendezVous" positionX="-875" positionY="-54" width="128" height="88"/>
-        <element name="Signalement" positionX="-407" positionY="-81" width="128" height="133"/>
-        <element name="Specialite" positionX="-1359" positionY="9" width="128" height="88"/>
-        <element name="TypeActivite" positionX="-551" positionY="216" width="128" height="88"/>
+        <element name="EtablissementLieu" positionX="-1181" positionY="-90" width="128" height="133"/>
+        <element name="Etat" positionX="-252" positionY="-7" width="128" height="88"/>
+        <element name="Medicament" positionX="-1325" positionY="54" width="128" height="118"/>
+        <element name="Patient" positionX="-513" positionY="-171" width="128" height="178"/>
+        <element name="Personne" positionX="-830" positionY="-270" width="128" height="118"/>
+        <element name="Prescription" positionX="-776" positionY="90" width="128" height="88"/>
+        <element name="PrescriptionActivite" positionX="-461" positionY="71" width="128" height="118"/>
+        <element name="PrescriptionMedicale" positionX="-1064" positionY="90" width="128" height="103"/>
+        <element name="Professionnel" positionX="-990" positionY="-153" width="117" height="118"/>
+        <element name="RealisationReelle" positionX="-1116" positionY="248" width="128" height="103"/>
+        <element name="RealisationTheorique" positionX="-776" positionY="209" width="128" height="133"/>
+        <element name="RendezVous" positionX="-731" positionY="-97" width="128" height="133"/>
+        <element name="Signalement" positionX="-297" positionY="-216" width="128" height="133"/>
+        <element name="Specialite" positionX="-1172" positionY="-241" width="128" height="88"/>
+        <element name="TypeActivite" positionX="-252" positionY="254" width="128" height="88"/>
     </elements>
 </model>
