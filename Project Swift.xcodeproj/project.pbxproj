@@ -240,6 +240,7 @@
 				TargetAttributes = {
 					2F5E445D203B06ED00B2CC91 = {
 						CreatedOnToolsVersion = 8.3.3;
+						DevelopmentTeam = LW5X354646;
 						ProvisioningStyle = Automatic;
 					};
 					2F5E4474203B06EE00B2CC91 = {
@@ -474,9 +475,10 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				DEVELOPMENT_TEAM = LW5X354646;
 				INFOPLIST_FILE = "Project Swift/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = "Polytech.Univ-Monpt2.fr.Project-Swift";
+				PRODUCT_BUNDLE_IDENTIFIER = "hamelina.ehamelo-etu.umontpellier.fr";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 3.0;
 			};
@@ -486,9 +488,10 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				DEVELOPMENT_TEAM = LW5X354646;
 				INFOPLIST_FILE = "Project Swift/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = "Polytech.Univ-Monpt2.fr.Project-Swift";
+				PRODUCT_BUNDLE_IDENTIFIER = "hamelina.ehamelo-etu.umontpellier.fr";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 3.0;
 			};
