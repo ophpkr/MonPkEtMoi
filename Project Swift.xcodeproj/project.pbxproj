@@ -15,18 +15,6 @@
 		2F5E446F203B06EE00B2CC91 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 2F5E446D203B06EE00B2CC91 /* LaunchScreen.storyboard */; };
 		2F5E447A203B06EE00B2CC91 /* Project_SwiftTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2F5E4479203B06EE00B2CC91 /* Project_SwiftTests.swift */; };
 		2F5E4485203B06EE00B2CC91 /* Project_SwiftUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2F5E4484203B06EE00B2CC91 /* Project_SwiftUITests.swift */; };
-		C0CC3C58203C2560006B2BC2 /* Medicament.swift in Sources */ = {isa = PBXBuildFile; fileRef = C0CC3C57203C2560006B2BC2 /* Medicament.swift */; };
-		C0CC3C59203C2560006B2BC2 /* Medicament.swift in Sources */ = {isa = PBXBuildFile; fileRef = C0CC3C57203C2560006B2BC2 /* Medicament.swift */; };
-		C0CC3C5A203C2560006B2BC2 /* Medicament.swift in Sources */ = {isa = PBXBuildFile; fileRef = C0CC3C57203C2560006B2BC2 /* Medicament.swift */; };
-		C0CC3C5D203C2C5E006B2BC2 /* Prescription.swift in Sources */ = {isa = PBXBuildFile; fileRef = C0CC3C5C203C2C5E006B2BC2 /* Prescription.swift */; };
-		C0CC3C5E203C2C5E006B2BC2 /* Prescription.swift in Sources */ = {isa = PBXBuildFile; fileRef = C0CC3C5C203C2C5E006B2BC2 /* Prescription.swift */; };
-		C0CC3C5F203C2C5E006B2BC2 /* Prescription.swift in Sources */ = {isa = PBXBuildFile; fileRef = C0CC3C5C203C2C5E006B2BC2 /* Prescription.swift */; };
-		C0CC3C61203C362F006B2BC2 /* essais.swift in Sources */ = {isa = PBXBuildFile; fileRef = C0CC3C60203C362F006B2BC2 /* essais.swift */; };
-		C0CC3C62203C362F006B2BC2 /* essais.swift in Sources */ = {isa = PBXBuildFile; fileRef = C0CC3C60203C362F006B2BC2 /* essais.swift */; };
-		C0CC3C63203C362F006B2BC2 /* essais.swift in Sources */ = {isa = PBXBuildFile; fileRef = C0CC3C60203C362F006B2BC2 /* essais.swift */; };
-		C0CC3C69203C3A81006B2BC2 /* HeurePrise.swift in Sources */ = {isa = PBXBuildFile; fileRef = C0CC3C68203C3A81006B2BC2 /* HeurePrise.swift */; };
-		C0CC3C6A203C3A81006B2BC2 /* HeurePrise.swift in Sources */ = {isa = PBXBuildFile; fileRef = C0CC3C68203C3A81006B2BC2 /* HeurePrise.swift */; };
-		C0CC3C6B203C3A81006B2BC2 /* HeurePrise.swift in Sources */ = {isa = PBXBuildFile; fileRef = C0CC3C68203C3A81006B2BC2 /* HeurePrise.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -61,10 +49,6 @@
 		2F5E4480203B06EE00B2CC91 /* Project SwiftUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Project SwiftUITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		2F5E4484203B06EE00B2CC91 /* Project_SwiftUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Project_SwiftUITests.swift; sourceTree = "<group>"; };
 		2F5E4486203B06EE00B2CC91 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		C0CC3C57203C2560006B2BC2 /* Medicament.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Medicament.swift; sourceTree = "<group>"; };
-		C0CC3C5C203C2C5E006B2BC2 /* Prescription.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Prescription.swift; sourceTree = "<group>"; };
-		C0CC3C60203C362F006B2BC2 /* essais.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = essais.swift; sourceTree = "<group>"; };
-		C0CC3C68203C3A81006B2BC2 /* HeurePrise.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = HeurePrise.swift; path = ../HeurePrise.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -150,10 +134,6 @@
 			children = (
 				C0CC3C6D203C434B006B2BC2 /* ModelTraitement */,
 				C0CC3C6C203C42C1006B2BC2 /* ModelPatient */,
-				C0CC3C68203C3A81006B2BC2 /* HeurePrise.swift */,
-				C0CC3C57203C2560006B2BC2 /* Medicament.swift */,
-				C0CC3C5C203C2C5E006B2BC2 /* Prescription.swift */,
-				C0CC3C60203C362F006B2BC2 /* essais.swift */,
 			);
 			name = Model;
 			sourceTree = "<group>";
@@ -307,12 +287,8 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				C0CC3C5D203C2C5E006B2BC2 /* Prescription.swift in Sources */,
-				C0CC3C61203C362F006B2BC2 /* essais.swift in Sources */,
 				2F5E4464203B06ED00B2CC91 /* ViewController.swift in Sources */,
 				2F5E446A203B06EE00B2CC91 /* Project_Swift.xcdatamodeld in Sources */,
-				C0CC3C58203C2560006B2BC2 /* Medicament.swift in Sources */,
-				C0CC3C69203C3A81006B2BC2 /* HeurePrise.swift in Sources */,
 				2F5E4462203B06ED00B2CC91 /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -321,11 +297,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				C0CC3C5E203C2C5E006B2BC2 /* Prescription.swift in Sources */,
-				C0CC3C59203C2560006B2BC2 /* Medicament.swift in Sources */,
-				C0CC3C6A203C3A81006B2BC2 /* HeurePrise.swift in Sources */,
 				2F5E447A203B06EE00B2CC91 /* Project_SwiftTests.swift in Sources */,
-				C0CC3C62203C362F006B2BC2 /* essais.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -333,11 +305,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				C0CC3C5F203C2C5E006B2BC2 /* Prescription.swift in Sources */,
-				C0CC3C5A203C2560006B2BC2 /* Medicament.swift in Sources */,
-				C0CC3C6B203C3A81006B2BC2 /* HeurePrise.swift in Sources */,
 				2F5E4485203B06EE00B2CC91 /* Project_SwiftUITests.swift in Sources */,
-				C0CC3C63203C362F006B2BC2 /* essais.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
