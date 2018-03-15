@@ -15,6 +15,7 @@ import Foundation
  **pdescriptionMedicament**: Medicament -> String?
 */
 
+
 class Medicament{
     
     private var pnomMedicament :String

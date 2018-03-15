@@ -19,15 +19,18 @@
 		4CF0A8EF20599DCB00AD9596 /* Medicament.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4CF0A8EE20599DCB00AD9596 /* Medicament.swift */; };
 		4CF0A8F020599DCB00AD9596 /* Medicament.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4CF0A8EE20599DCB00AD9596 /* Medicament.swift */; };
 		4CF0A8F120599DCB00AD9596 /* Medicament.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4CF0A8EE20599DCB00AD9596 /* Medicament.swift */; };
-		4CF0A8F32059D5B900AD9596 /* ListeHeurePrise.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4CF0A8F22059D5B900AD9596 /* ListeHeurePrise.swift */; };
-		4CF0A8F42059D5B900AD9596 /* ListeHeurePrise.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4CF0A8F22059D5B900AD9596 /* ListeHeurePrise.swift */; };
-		4CF0A8F52059D5B900AD9596 /* ListeHeurePrise.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4CF0A8F22059D5B900AD9596 /* ListeHeurePrise.swift */; };
 		4CF0A8F72059DBCD00AD9596 /* Prescription.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4CF0A8F62059DBCD00AD9596 /* Prescription.swift */; };
 		4CF0A8F82059DBCD00AD9596 /* Prescription.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4CF0A8F62059DBCD00AD9596 /* Prescription.swift */; };
 		4CF0A8F92059DBCD00AD9596 /* Prescription.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4CF0A8F62059DBCD00AD9596 /* Prescription.swift */; };
 		4CF0A8FB205AB5C500AD9596 /* ListePrescription.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4CF0A8FA205AB5C500AD9596 /* ListePrescription.swift */; };
 		4CF0A8FC205AB5C500AD9596 /* ListePrescription.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4CF0A8FA205AB5C500AD9596 /* ListePrescription.swift */; };
 		4CF0A8FD205AB5C500AD9596 /* ListePrescription.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4CF0A8FA205AB5C500AD9596 /* ListePrescription.swift */; };
+		4CF0A8FF205AEF0000AD9596 /* Prise.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4CF0A8FE205AEF0000AD9596 /* Prise.swift */; };
+		4CF0A900205AEF0000AD9596 /* Prise.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4CF0A8FE205AEF0000AD9596 /* Prise.swift */; };
+		4CF0A901205AEF0000AD9596 /* Prise.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4CF0A8FE205AEF0000AD9596 /* Prise.swift */; };
+		4CF0A903205AEF2700AD9596 /* ListePrise.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4CF0A902205AEF2700AD9596 /* ListePrise.swift */; };
+		4CF0A904205AEF2700AD9596 /* ListePrise.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4CF0A902205AEF2700AD9596 /* ListePrise.swift */; };
+		4CF0A905205AEF2700AD9596 /* ListePrise.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4CF0A902205AEF2700AD9596 /* ListePrise.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -64,9 +67,10 @@
 		2F5E4486203B06EE00B2CC91 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		4CF0A8EC205997B800AD9596 /* OrdonnanceTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OrdonnanceTableViewController.swift; sourceTree = "<group>"; };
 		4CF0A8EE20599DCB00AD9596 /* Medicament.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Medicament.swift; sourceTree = "<group>"; };
-		4CF0A8F22059D5B900AD9596 /* ListeHeurePrise.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ListeHeurePrise.swift; sourceTree = "<group>"; };
 		4CF0A8F62059DBCD00AD9596 /* Prescription.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Prescription.swift; sourceTree = "<group>"; };
 		4CF0A8FA205AB5C500AD9596 /* ListePrescription.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ListePrescription.swift; sourceTree = "<group>"; };
+		4CF0A8FE205AEF0000AD9596 /* Prise.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Prise.swift; sourceTree = "<group>"; };
+		4CF0A902205AEF2700AD9596 /* ListePrise.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ListePrise.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -176,9 +180,10 @@
 			isa = PBXGroup;
 			children = (
 				4CF0A8EE20599DCB00AD9596 /* Medicament.swift */,
-				4CF0A8F22059D5B900AD9596 /* ListeHeurePrise.swift */,
 				4CF0A8F62059DBCD00AD9596 /* Prescription.swift */,
 				4CF0A8FA205AB5C500AD9596 /* ListePrescription.swift */,
+				4CF0A8FE205AEF0000AD9596 /* Prise.swift */,
+				4CF0A902205AEF2700AD9596 /* ListePrise.swift */,
 			);
 			name = ModelTraitement;
 			sourceTree = "<group>";
@@ -318,11 +323,12 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				4CF0A8FF205AEF0000AD9596 /* Prise.swift in Sources */,
+				4CF0A903205AEF2700AD9596 /* ListePrise.swift in Sources */,
 				4CF0A8ED205997B800AD9596 /* OrdonnanceTableViewController.swift in Sources */,
 				2F5E4464203B06ED00B2CC91 /* ViewController.swift in Sources */,
 				4CF0A8EF20599DCB00AD9596 /* Medicament.swift in Sources */,
 				4CF0A8F72059DBCD00AD9596 /* Prescription.swift in Sources */,
-				4CF0A8F32059D5B900AD9596 /* ListeHeurePrise.swift in Sources */,
 				4CF0A8FB205AB5C500AD9596 /* ListePrescription.swift in Sources */,
 				2F5E446A203B06EE00B2CC91 /* Project_Swift.xcdatamodeld in Sources */,
 				2F5E4462203B06ED00B2CC91 /* AppDelegate.swift in Sources */,
@@ -333,9 +339,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				4CF0A8F42059D5B900AD9596 /* ListeHeurePrise.swift in Sources */,
 				4CF0A8FC205AB5C500AD9596 /* ListePrescription.swift in Sources */,
+				4CF0A904205AEF2700AD9596 /* ListePrise.swift in Sources */,
 				4CF0A8F020599DCB00AD9596 /* Medicament.swift in Sources */,
+				4CF0A900205AEF0000AD9596 /* Prise.swift in Sources */,
 				2F5E447A203B06EE00B2CC91 /* Project_SwiftTests.swift in Sources */,
 				4CF0A8F82059DBCD00AD9596 /* Prescription.swift in Sources */,
 			);
@@ -345,9 +352,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				4CF0A8F52059D5B900AD9596 /* ListeHeurePrise.swift in Sources */,
 				4CF0A8FD205AB5C500AD9596 /* ListePrescription.swift in Sources */,
+				4CF0A905205AEF2700AD9596 /* ListePrise.swift in Sources */,
 				4CF0A8F120599DCB00AD9596 /* Medicament.swift in Sources */,
+				4CF0A901205AEF0000AD9596 /* Prise.swift in Sources */,
 				2F5E4485203B06EE00B2CC91 /* Project_SwiftUITests.swift in Sources */,
 				4CF0A8F92059DBCD00AD9596 /* Prescription.swift in Sources */,
 			);
