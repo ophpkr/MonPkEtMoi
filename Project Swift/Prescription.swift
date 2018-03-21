@@ -13,8 +13,7 @@ import Foundation
  **pmedicament**: Prescription -> Medicament
  **dateDebutPrescription**: Prescription -> Date
  **dateFinPrescription**: Prescription -> Date
- **dateFinPrescription**: Prescription -> Date
- **listeHeuresPrise**: Prescription -> ListeHeurePrise
+ **listePrises**: Prescription -> ListePrise
  **descriptionPrescription**: Prescription -> String?
  */
 
@@ -25,7 +24,7 @@ import Foundation
 ///
 
 
-class Prescription{
+class Prescription : NSObject{
     
     private var pmedicament : Medicament
     
@@ -38,14 +37,22 @@ class Prescription{
         get{ return self.pmedicament}
     }
 
+    //private let dao : PrescriptionDAO
     
     init(medicament : Medicament, dateDeb: Date, dateFin : Date, listeH : ListePrise, description : String?){
+        /*if let dao = PrescriptionDAOq.searchDAO(medicament, dateDeb, dateFin, listeH, description){
+            self.dao = dao
+        }else{
+            self.dao = PrescriptionDAO.createDAO(medicament, dateDeb, dateFin, listeH, description)
+        }*/
         self.pmedicament = medicament
         self.dateDebutPrescription = dateDeb
         self.dateFinPrescription = dateFin
         self.listeHeuresPrise = listeH
         self.descriptionPrescription = description
+        
     }
+/**/
     
     
     ///'Prescription' x 'Date' -> 'Bool' -- indique si la prescription est obsolete i.e. si la dateFinPrescription dépasse la date passée en parametre

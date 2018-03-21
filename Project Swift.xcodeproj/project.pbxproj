@@ -15,6 +15,18 @@
 		2F5E446F203B06EE00B2CC91 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 2F5E446D203B06EE00B2CC91 /* LaunchScreen.storyboard */; };
 		2F5E447A203B06EE00B2CC91 /* Project_SwiftTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2F5E4479203B06EE00B2CC91 /* Project_SwiftTests.swift */; };
 		2F5E4485203B06EE00B2CC91 /* Project_SwiftUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2F5E4484203B06EE00B2CC91 /* Project_SwiftUITests.swift */; };
+		4CD2420F205EA7C800420A90 /* MedicamentDAO.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4CD2420E205EA7C800420A90 /* MedicamentDAO.swift */; };
+		4CD24210205EA7C800420A90 /* MedicamentDAO.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4CD2420E205EA7C800420A90 /* MedicamentDAO.swift */; };
+		4CD24211205EA7C800420A90 /* MedicamentDAO.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4CD2420E205EA7C800420A90 /* MedicamentDAO.swift */; };
+		4CD24213205EA7EC00420A90 /* PrescriptionDAO.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4CD24212205EA7EC00420A90 /* PrescriptionDAO.swift */; };
+		4CD24214205EA7EC00420A90 /* PrescriptionDAO.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4CD24212205EA7EC00420A90 /* PrescriptionDAO.swift */; };
+		4CD24215205EA7EC00420A90 /* PrescriptionDAO.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4CD24212205EA7EC00420A90 /* PrescriptionDAO.swift */; };
+		4CD24217205EB69800420A90 /* AjoutPrescriptionTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4CD24216205EB69800420A90 /* AjoutPrescriptionTableViewController.swift */; };
+		4CD24218205EB69800420A90 /* AjoutPrescriptionTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4CD24216205EB69800420A90 /* AjoutPrescriptionTableViewController.swift */; };
+		4CD24219205EB69800420A90 /* AjoutPrescriptionTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4CD24216205EB69800420A90 /* AjoutPrescriptionTableViewController.swift */; };
+		4CD2421B205EEFB100420A90 /* DatePickerViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4CD2421A205EEFB100420A90 /* DatePickerViewController.swift */; };
+		4CD2421C205EEFB100420A90 /* DatePickerViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4CD2421A205EEFB100420A90 /* DatePickerViewController.swift */; };
+		4CD2421D205EEFB100420A90 /* DatePickerViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4CD2421A205EEFB100420A90 /* DatePickerViewController.swift */; };
 		4CF0A8ED205997B800AD9596 /* OrdonnanceTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4CF0A8EC205997B800AD9596 /* OrdonnanceTableViewController.swift */; };
 		4CF0A8EF20599DCB00AD9596 /* Medicament.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4CF0A8EE20599DCB00AD9596 /* Medicament.swift */; };
 		4CF0A8F020599DCB00AD9596 /* Medicament.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4CF0A8EE20599DCB00AD9596 /* Medicament.swift */; };
@@ -65,6 +77,10 @@
 		2F5E4480203B06EE00B2CC91 /* Project SwiftUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Project SwiftUITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		2F5E4484203B06EE00B2CC91 /* Project_SwiftUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Project_SwiftUITests.swift; sourceTree = "<group>"; };
 		2F5E4486203B06EE00B2CC91 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		4CD2420E205EA7C800420A90 /* MedicamentDAO.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MedicamentDAO.swift; sourceTree = "<group>"; };
+		4CD24212205EA7EC00420A90 /* PrescriptionDAO.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PrescriptionDAO.swift; sourceTree = "<group>"; };
+		4CD24216205EB69800420A90 /* AjoutPrescriptionTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AjoutPrescriptionTableViewController.swift; sourceTree = "<group>"; };
+		4CD2421A205EEFB100420A90 /* DatePickerViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DatePickerViewController.swift; sourceTree = "<group>"; };
 		4CF0A8EC205997B800AD9596 /* OrdonnanceTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OrdonnanceTableViewController.swift; sourceTree = "<group>"; };
 		4CF0A8EE20599DCB00AD9596 /* Medicament.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Medicament.swift; sourceTree = "<group>"; };
 		4CF0A8F62059DBCD00AD9596 /* Prescription.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Prescription.swift; sourceTree = "<group>"; };
@@ -121,6 +137,7 @@
 		2F5E4460203B06ED00B2CC91 /* Project Swift */ = {
 			isa = PBXGroup;
 			children = (
+				4CD2420D205EA77F00420A90 /* DAO */,
 				4CF0A8E9205990CF00AD9596 /* Controller */,
 				C0CC3C5B203C2BD3006B2BC2 /* Model */,
 				2F5E4461203B06ED00B2CC91 /* AppDelegate.swift */,
@@ -152,10 +169,21 @@
 			path = "Project SwiftUITests";
 			sourceTree = "<group>";
 		};
+		4CD2420D205EA77F00420A90 /* DAO */ = {
+			isa = PBXGroup;
+			children = (
+				4CD2420E205EA7C800420A90 /* MedicamentDAO.swift */,
+				4CD24212205EA7EC00420A90 /* PrescriptionDAO.swift */,
+			);
+			name = DAO;
+			sourceTree = "<group>";
+		};
 		4CF0A8E9205990CF00AD9596 /* Controller */ = {
 			isa = PBXGroup;
 			children = (
 				4CF0A8EC205997B800AD9596 /* OrdonnanceTableViewController.swift */,
+				4CD24216205EB69800420A90 /* AjoutPrescriptionTableViewController.swift */,
+				4CD2421A205EEFB100420A90 /* DatePickerViewController.swift */,
 			);
 			name = Controller;
 			sourceTree = "<group>";
@@ -324,14 +352,18 @@
 			buildActionMask = 2147483647;
 			files = (
 				4CF0A8FF205AEF0000AD9596 /* Prise.swift in Sources */,
+				4CD2421B205EEFB100420A90 /* DatePickerViewController.swift in Sources */,
 				4CF0A903205AEF2700AD9596 /* ListePrise.swift in Sources */,
+				4CD24213205EA7EC00420A90 /* PrescriptionDAO.swift in Sources */,
 				4CF0A8ED205997B800AD9596 /* OrdonnanceTableViewController.swift in Sources */,
 				2F5E4464203B06ED00B2CC91 /* ViewController.swift in Sources */,
+				4CD24217205EB69800420A90 /* AjoutPrescriptionTableViewController.swift in Sources */,
 				4CF0A8EF20599DCB00AD9596 /* Medicament.swift in Sources */,
 				4CF0A8F72059DBCD00AD9596 /* Prescription.swift in Sources */,
 				4CF0A8FB205AB5C500AD9596 /* ListePrescription.swift in Sources */,
 				2F5E446A203B06EE00B2CC91 /* Project_Swift.xcdatamodeld in Sources */,
 				2F5E4462203B06ED00B2CC91 /* AppDelegate.swift in Sources */,
+				4CD2420F205EA7C800420A90 /* MedicamentDAO.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -340,10 +372,14 @@
 			buildActionMask = 2147483647;
 			files = (
 				4CF0A8FC205AB5C500AD9596 /* ListePrescription.swift in Sources */,
+				4CD24210205EA7C800420A90 /* MedicamentDAO.swift in Sources */,
 				4CF0A904205AEF2700AD9596 /* ListePrise.swift in Sources */,
 				4CF0A8F020599DCB00AD9596 /* Medicament.swift in Sources */,
 				4CF0A900205AEF0000AD9596 /* Prise.swift in Sources */,
+				4CD24218205EB69800420A90 /* AjoutPrescriptionTableViewController.swift in Sources */,
+				4CD2421C205EEFB100420A90 /* DatePickerViewController.swift in Sources */,
 				2F5E447A203B06EE00B2CC91 /* Project_SwiftTests.swift in Sources */,
+				4CD24214205EA7EC00420A90 /* PrescriptionDAO.swift in Sources */,
 				4CF0A8F82059DBCD00AD9596 /* Prescription.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -353,10 +389,14 @@
 			buildActionMask = 2147483647;
 			files = (
 				4CF0A8FD205AB5C500AD9596 /* ListePrescription.swift in Sources */,
+				4CD24211205EA7C800420A90 /* MedicamentDAO.swift in Sources */,
 				4CF0A905205AEF2700AD9596 /* ListePrise.swift in Sources */,
 				4CF0A8F120599DCB00AD9596 /* Medicament.swift in Sources */,
 				4CF0A901205AEF0000AD9596 /* Prise.swift in Sources */,
+				4CD24219205EB69800420A90 /* AjoutPrescriptionTableViewController.swift in Sources */,
+				4CD2421D205EEFB100420A90 /* DatePickerViewController.swift in Sources */,
 				2F5E4485203B06EE00B2CC91 /* Project_SwiftUITests.swift in Sources */,
+				4CD24215205EA7EC00420A90 /* PrescriptionDAO.swift in Sources */,
 				4CF0A8F92059DBCD00AD9596 /* Prescription.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
