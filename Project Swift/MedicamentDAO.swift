@@ -7,7 +7,13 @@
 //
 
 import Foundation
+import UIKit
 import CoreData
 
 
-
+extension Medicament{
+    
+    static func getNewMedicamentDAO() -> Medicament?{
+        g
+    }
+}
