@@ -16,29 +16,46 @@ import Foundation
 */
 
 
-class Medicament{
+class MedicamentModel{
     
-    private var pnomMedicament :String
-    private var pdoseMedicament :Int
-    private var pdescriptionMedicament :String?
-    
+    private let dao : Medicament
     
     var nomMedicament : String{
-        get{ return self.pnomMedicament}
+        get{
+            return self.dao.nomMedicament!
+        }
+        set{
+            self.dao.nomMedicament = newValue
+        }
     }
     
-    var doseMedicament : Int{
-        get{ return self.pdoseMedicament}
+    
+    var doseMedicament : Int16{
+        get{
+            return self.dao.doseMedicament
+        }
+        set{
+            self.dao.doseMedicament = newValue
+        }
     }
     
-    var descriptionMedicament : String?{
-        get{ return self.pdescriptionMedicament}
+    var descriptionMedicament : String{
+        get{
+            return self.dao.presentationMedicament!
+        }
+        set{
+            self.dao.presentationMedicament = newValue
+        }
     }
     
-    init(nom : String, dose: Int, description : String?){
-        self.pnomMedicament = nom
-        self.pdoseMedicament = dose
-        self.pdescriptionMedicament = description
+    init(nom : String, dose: Int16, description : String?){
+        guard let dao = Medicament.getNewMedicamentDAO() else{
+            fatalError("impossible d'obtenir un dao pour Medicament")
+        }
+        self.dao = dao
+        self.dao.nomMedicament = nom
+        self.dao.doseMedicament = dose
+        self.dao.presentationMedicament = description
     }
     
 }

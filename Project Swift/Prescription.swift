@@ -24,34 +24,81 @@ import Foundation
 ///
 
 
-class Prescription : NSObject{
+class PrescriptionModel : NSObject{
     
-    private var pmedicament : Medicament
+    private let dao : Prescription
+
+
     
-    var dateDebutPrescription : Date
-    var dateFinPrescription : Date
-    var listeHeuresPrise : ListePrise
-    var descriptionPrescription : String?
+    var dateDebutPrescription : NSDate{
+        get{
+            return self.dao.dateDebutPresc!
+        }
+        set{
+            self.dao.dateDebutPresc = newValue
+        }
+        
+    }
+    
+    
+    var dateFinPrescription : NSDate{
+        get{
+            return self.dao.dateFinPresc!
+        }
+        set{
+            self.dao.dateFinPresc = newValue
+        }
+        
+    }
+    
+    var listePrise : ListePrise{
+        get{
+            return self.dao.listeP
+        }
+        set{
+            self.dao.listeP = newValue
+        }
+        
+    }
+    
+    var descriptionPrescription : String?{
+        get{
+            return self.dao.descriptionPresc
+        }
+        set{
+            self.dao.descriptionPresc = newValue
+        }
+        
+    }
     
     var medicament : Medicament{
-        get{ return self.pmedicament}
-    }
+        get{
+            return self.dao.medicament
+        }
+        set{
+            self.dao.medicament = newValue
+        }
+}
 
     //private let dao : PrescriptionDAO
     
-    init(medicament : Medicament, dateDeb: Date, dateFin : Date, listeH : ListePrise, description : String?){
-        /*if let dao = PrescriptionDAOq.searchDAO(medicament, dateDeb, dateFin, listeH, description){
-            self.dao = dao
-        }else{
-            self.dao = PrescriptionDAO.createDAO(medicament, dateDeb, dateFin, listeH, description)
-        }*/
-        self.pmedicament = medicament
+    init(medicament : Medicament, dateDeb: Date, dateFin : Date, listeP : ListePrise, description : String?){
+        guard let dao = Prescription.getNewPrescriptionDAO() else{
+            fatalError("impossible d'obtenir un dao pour Prescription")
+        }
+        self.dao = dao
+        self.dao.dateDebutPrescription = dateDeb
+        self.dao.dateFinPrescription = dateFin
+        self.dao.listePrise = listeP
+        self.dao.descriptionPresc = description
+        }
+        /*self.pmedicament = medicament
         self.dateDebutPrescription = dateDeb
         self.dateFinPrescription = dateFin
         self.listeHeuresPrise = listeH
-        self.descriptionPrescription = description
+        self.descriptionPrescription = description*/
         
-    }
+}
 /**/
     
     
